@@ -1,9 +1,18 @@
-import { initFileUpload } from "./modules/fileUpload.js";
+import { initAccordion } from "./modules/accordion/accordion.js";
+import initAdaptiveImages from "./modules/adaptiveImages/adaptiveImages.js";
+import { modalLoader } from "./modules/modals/instanceModal.js";
+import { initFileUpload } from "./modules/upload/fileUpload.js";
+import { initBindsPoliciesAgree } from "./modules/upload/policiesHandler.js";
 
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector(".upload__form");
-    const fileInput = form.getElementById("fileInput");
-    const uploadButton = form.querySelector(".btn-upload");
+const form = document.querySelector(".area-upload");
+const fileInput = form.querySelector("input[type='file']");
+const uploadButton = form.querySelector(".btn-upload");
+const policiesBtn = document.querySelector("#policiesAgreeBtn");
 
-    initFileUpload(form, fileInput, uploadButton);
-});
+if (document.querySelector(".result")) {
+    initAccordion(".result__content-accordion", ".result__content-accordion-item");
+}
+
+initFileUpload(form, fileInput, uploadButton);
+initBindsPoliciesAgree(policiesBtn);
+initAdaptiveImages();
