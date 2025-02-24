@@ -3,7 +3,23 @@
 }
 
 @media (max-width:1220px){
+    .offer {
 
+        &__rewards {
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+
+        &__title {
+            font-size: 50px;
+            margin-top: 50px;
+        }
+
+        &__descr {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    }
 }
 
 @media (max-width:1020px){
@@ -12,18 +28,121 @@
 
 @media (max-width:992px){
 
+    // offer 992
+    .offer {
+        &__row {
+            flex-direction: column;
+            row-gap: 50px;
+        }
+
+        &__col {
+            width: 100%;
+        }
+
+        &__title {
+            margin-top: 30px;
+        }
+    }
+
+    // dominates-card 992
+    .dominates-card {
+
+        &__icon {
+            max-width: 40px;
+            max-height: 41px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
 }
 
 @media (max-width:876px){
 
 }
 
-@media (max-width:786px){
+@media (max-width:768px){
+    .header {
+        padding-top: 0;
+        &__logo {
+            background: none;
+            backdrop-filter: none;
+            img {
+                max-width: 111px;
+            }
+        }
+    }
 
+    // offer 768
+    .offer {
+
+        &__row {
+            row-gap: 30px;
+        }
+
+        &__rewards {
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: nowrap;
+        }
+
+        &__rewards-item {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__title {
+            margin-top: 25px;
+            font-size: 28px;
+            -webkit-text-stroke-width: 0px;
+            text-align: center;
+        }
+
+        &__descr {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        &__dominates {
+            gap: 30px;
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    // dominates-card 768
+    .dominates-card {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 60px;
+        &__icon {
+            width: 7.6%;
+            max-width: 35px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 140%;
+        }
+    }
 }
 
 @media (max-width:576px){
-
+    // offer 576
+    .offer {
+        &__rewards {
+            max-width: 260px;
+        }
+    }
 }
 
 @media (max-width:450px){

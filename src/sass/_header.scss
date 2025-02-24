@@ -1,0 +1,16 @@
+.header {  
+    padding-top: 28px;
+    &__logo {
+        display: block;
+        border-radius: 41px;
+        background: rgba(12, 114, 157, 0.1);
+        backdrop-filter: blur(5px);
+        
+        img {
+            max-width: 226px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

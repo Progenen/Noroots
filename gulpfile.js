@@ -125,20 +125,20 @@ function svgspriteMono() {
     return src('src/svg/stack/mono/*')
         .pipe(sprite({
             shape: {
-                spacing: {
-                    padding: 0
-                },
+                spacing: { padding: 0 },
                 transform: [{
-                    "svgo": {
-                        "plugins": [
-                            { removeAttrs: { attrs: ['class', 'data-name', 'fill', 'stroke', 'color'] }}
+                    svgo: {
+                        plugins: [
+                            { removeAttrs: { attrs: ['class', 'data-name'] } }, // НЕ удаляем fill и stroke
+                            { convertColors: { currentColor: true } }, // Преобразуем цвета в currentColor
+                            { removeStyleElement: true } // Убираем встроенные стили, если есть
                         ]
                     }
                 }]
             },
             mode: {
                 stack: {
-                    sprite: 'spriteMono.svg'  // sprite file name
+                    sprite: 'spriteMono.svg'
                 }
             },
         }))

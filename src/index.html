@@ -1,5 +1,76 @@
 @@include('./parts/header.html')
 <main>
+    <section class="offer">
+        <div class="container">
+            <div class="offer__row row">
+                <div class="offer__col offer__col--left">
+                    <div class="offer__rewards">
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards1.webp"/>
+                        </div>
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards2.webp"/>
+                        </div>
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards3.webp"/>
+                        </div>
+                    </div>
+                    <h2 class="offer__title">
+                        Сервис для быстрой проверки договоров
+                    </h2>
+                    <p class="offer__descr">
+                        Делегируйте договорную работу Noroots
+                    </p>
+                </div>
+                <div class="offer__col offer__col--right">
+                    <div class="offer__dominates">
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#uploadIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Загрузите договор в формате <strong>docx, png, jpg/jpeg или pdf</strong>
+                            </div>
+                        </div>
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#doneIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Сервис проверит его на скрытые риски 
+                                и соответствие законодательству
+                            </div>
+                        </div>
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#textIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Получите рекомендации по улучшению конкретных пунктов договора
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="upload">
+        <div class="container">
+            <form class="upload__form">
+                <div class="upload__form-area">
+                    <div class="upload__form-title">Перенесите файл или нажмите на кнопку</div>
+                    <input type="file" name="document" hidden id="fileInput" accept=".docx,.pdf,.png,.jpg">
+                    <button type="button" class="upload__form-btn btn-upload">
+                        <svg>
+                            <use xlink:href="svg/dest/stack/spriteMono.svg#uploadIcon"></use>
+                        </svg>
+                        <span>Загрузите договор</span>
+                    </button>
+                    <div class="upload__form-formats">Поддерживаются форматы: .docx, .pdf, .png, .jpg</div>
+                </div>
+            </form>
+        </div>
+    </section>
 </main>
 </div>
 @@include('./parts/footer.html')

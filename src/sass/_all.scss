@@ -6,12 +6,17 @@ html {
     font-size: 16px;
 }
 
+:root {
+    --black: #10182B;
+}
+
 body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-family: Roboto;
-    font-size: 1rem;
+    font-family: Inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background: #F0F0F0;
     font-weight: 400;
 }
 
@@ -35,8 +40,40 @@ a {
 
 .content {
     flex: 1 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 footer {
     flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.circles {
+    position: absolute;
+    &__item {
+
+        position: absolute;
+    }
+
+    &__item--1 {
+        top: 0;
+        left: 131px;
+    }
+
+    &__item--2 {
+        top: 401px;
+        right: 0;
+    }
+
+    &__item--3 {
+        bottom: 0;
+        left: 0;
+    }
 }
