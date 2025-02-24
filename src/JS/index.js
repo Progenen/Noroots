@@ -16,3 +16,7 @@ if (document.querySelector(".result")) {
 initFileUpload(form, fileInput, uploadButton);
 initBindsPoliciesAgree(policiesBtn);
 initAdaptiveImages();
+
+if (document.querySelector(".modal-loader-show")) {
+    modalLoader.onOpen();
+} 

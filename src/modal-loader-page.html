@@ -1,0 +1,130 @@
+@@include('./parts/header.html')
+<main>
+    <section class="offer">
+        <div class="container">
+            <div class="offer__row row">
+                <div class="offer__col offer__col--left">
+                    <div class="offer__rewards">
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards1.webp"/>
+                        </div>
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards2.webp"/>
+                        </div>
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards3.webp"/>
+                        </div>
+                    </div>
+                    <h2 class="offer__title">
+                        Сервис для быстрой проверки договоров
+                    </h2>
+                    <p class="offer__descr">
+                        Делегируйте договорную работу Noroots
+                    </p>
+                </div>
+                <div class="offer__col offer__col--right">
+                    <div class="offer__dominates">
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#uploadIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Загрузите договор в формате <strong>docx, png, jpg/jpeg или pdf</strong>
+                            </div>
+                        </div>
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#doneIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Сервис проверит его на скрытые риски 
+                                и соответствие законодательству
+                            </div>
+                        </div>
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#textIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Получите рекомендации по улучшению конкретных пунктов договора
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="upload">
+        <div class="container">
+            <div class="upload__form area-upload">
+                <div class="upload__form-area ">
+                    <div class="upload__form-title">Перенесите файл или нажмите на кнопку</div>
+                    <input type="file" name="document" hidden id="fileInput" accept=".docx,.pdf,.png,.jpg">
+                    <button type="button" class="upload__form-btn btn-upload">
+                        <svg>
+                            <use xlink:href="svg/dest/stack/spriteMono.svg#uploadIcon"></use>
+                        </svg>
+                        <span>Загрузите договор</span>
+                    </button>
+                    <div class="upload__form-formats">Поддерживаются форматы: .docx, .pdf, .png, .jpg</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dominates">
+        <div class="container">
+            <h2 class="dominates__title header-h2">
+                Почему выбирают Noroots?
+            </h2>
+            <div class="dominates__items">
+                <div class="dominates__item dominates-card dominates-card--alt">
+                    <svg class="dominates-card__icon">
+                        <use xlink:href='svg/dest/stack/spriteMono.svg#loaderIcon'></use>
+                    </svg>
+                    <span class="dominates-card__text">
+                        Проверка договора <br/> <strong>за 2 минуты</strong>
+                    </span>
+                </div>
+                <div class="dominates__item dominates-card dominates-card--alt">
+                    <svg class="dominates-card__icon">
+                        <use xlink:href='svg/dest/stack/spriteMono.svg#checkListIcon'></use>
+                    </svg>
+                    <span class="dominates-card__text">
+                        Рекомендации 
+                        <strong> со ссылками на законы</strong>
+                    </span>
+                </div>
+                <div class="dominates__item dominates-card dominates-card--alt">
+                    <svg class="dominates-card__icon">
+                        <use xlink:href='svg/dest/stack/spriteMono.svg#doneIcon2'></use>
+                    </svg>
+                    <span class="dominates-card__text">
+                        Автоматизированная <strong>юридическая экспертиза</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <h2 class="partners__title header-h2">Партнеры</h2>
+            <div class="partners__items">
+                <div class="partners__item">
+                    <img src="images/content/partners/partners1.webp" alt="">
+                </div>
+                <div class="partners__item">
+                    <img src="images/content/partners/partners2.webp" alt="">
+                </div>
+                <div class="partners__item">
+                    <img src="images/content/partners/partners3.webp" alt="">
+                </div>
+                <div class="partners__item">
+                    <img src="images/content/partners/partners4.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+<div class="modal-loader-show" hidden></div>
+@@include('./parts/footer.html')

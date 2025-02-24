@@ -246,6 +246,26 @@ footer {
     background: linear-gradient(90deg, #10182b 0%, #0b75a1 100%);
     border: none;
     cursor: pointer;
+    outline: 3px solid #fff;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        top: -6px;
+        left: -6px;
+        background: linear-gradient(90deg, #10182b 0%, #0b75a1 100%);
+        z-index: -1;
+        border-radius: 35px;
+        transition: .3s;
+        opacity: 0;
+    }
+
+    &:hover::after {
+        transform: scale(1);
+        opacity: 1;
+    }
     svg {
         width: 25px;
         height: 25px;

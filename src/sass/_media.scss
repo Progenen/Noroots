@@ -262,9 +262,14 @@
         font-size: 20px;
         padding: 14px 10px;
         font-weight: 300;
+        outline: none;
         svg {
             width: 21px;
             height: 21px;
+        }
+
+        &::after {
+            display: none;
         }
     }
 

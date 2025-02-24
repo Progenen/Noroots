@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noroots | Development Version</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="circles">
+        <div class="circles__item circles__item--1">
+            <img src="images/graphics/circle1.webp" data-mob="images/graphics/circle1-mob.webp" alt="">
+        </div>
+        <div class="circles__item circles__item--2">
+            <img src="images/graphics/circle2.webp" alt="">
+        </div>
+        <div class="circles__item circles__item--3">
+            <img src="images/graphics/circle3.webp" data-mob="images/graphics/circle3-mob.webp" alt="">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <a href="#" class="header__logo">
+                        <img src="images/logo.webp" data-mob="images/logo-alt.webp" href="#" alt="Noroots" />
+                    </a>
+                </div>
+            </header>
+<main>
+    <section class="offer">
+        <div class="container">
+            <div class="offer__row row">
+                <div class="offer__col offer__col--left">
+                    <div class="offer__rewards">
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards1.webp"/>
+                        </div>
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards2.webp"/>
+                        </div>
+                        <div class="offer__rewards-item">
+                            <img src="images/content/rewards/rewards3.webp"/>
+                        </div>
+                    </div>
+                    <h2 class="offer__title">
+                        Сервис для быстрой проверки договоров
+                    </h2>
+                    <p class="offer__descr">
+                        Делегируйте договорную работу Noroots
+                    </p>
+                </div>
+                <div class="offer__col offer__col--right">
+                    <div class="offer__dominates">
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#uploadIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Загрузите договор в формате <strong>docx, png, jpg/jpeg или pdf</strong>
+                            </div>
+                        </div>
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#doneIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Сервис проверит его на скрытые риски 
+                                и соответствие законодательству
+                            </div>
+                        </div>
+                        <div class="offer__dominates-item dominates-card">
+                            <svg class="dominates-card__icon">
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#textIcon'></use>
+                            </svg>
+                            <div class="dominates-card__text">
+                                Получите рекомендации по улучшению конкретных пунктов договора
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="upload">
+        <div class="container">
+            <div class="upload__form area-upload">
+                <div class="upload__form-area ">
+                    <div class="upload__form-title">Перенесите файл или нажмите на кнопку</div>
+                    <input type="file" name="document" hidden id="fileInput" accept=".docx,.pdf,.png,.jpg">
+                    <button type="button" class="upload__form-btn btn-upload">
+                        <svg>
+                            <use xlink:href="svg/dest/stack/spriteMono.svg#uploadIcon"></use>
+                        </svg>
+                        <span>Загрузите договор</span>
+                    </button>
+                    <div class="upload__form-formats">Поддерживаются форматы: .docx, .pdf, .png, .jpg</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dominates">
+        <div class="container">
+            <h2 class="dominates__title header-h2">
+                Почему выбирают Noroots?
+            </h2>
+            <div class="dominates__items">
+                <div class="dominates__item dominates-card dominates-card--alt">
+                    <svg class="dominates-card__icon">
+                        <use xlink:href='svg/dest/stack/spriteMono.svg#loaderIcon'></use>
+                    </svg>
+                    <span class="dominates-card__text">
+                        Проверка договора <br/> <strong>за 2 минуты</strong>
+                    </span>
+                </div>
+                <div class="dominates__item dominates-card dominates-card--alt">
+                    <svg class="dominates-card__icon">
+                        <use xlink:href='svg/dest/stack/spriteMono.svg#checkListIcon'></use>
+                    </svg>
+                    <span class="dominates-card__text">
+                        Рекомендации 
+                        <strong> со ссылками на законы</strong>
+                    </span>
+                </div>
+                <div class="dominates__item dominates-card dominates-card--alt">
+                    <svg class="dominates-card__icon">
+                        <use xlink:href='svg/dest/stack/spriteMono.svg#doneIcon2'></use>
+                    </svg>
+                    <span class="dominates-card__text">
+                        Автоматизированная <strong>юридическая экспертиза</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <h2 class="partners__title header-h2">Партнеры</h2>
+            <div class="partners__items">
+                <div class="partners__item">
+                    <img src="images/content/partners/partners1.webp" alt="">
+                </div>
+                <div class="partners__item">
+                    <img src="images/content/partners/partners2.webp" alt="">
+                </div>
+                <div class="partners__item">
+                    <img src="images/content/partners/partners3.webp" alt="">
+                </div>
+                <div class="partners__item">
+                    <img src="images/content/partners/partners4.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+<div class="modal-loader-show" hidden></div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contacts">
+            <div class="footer__contacts-title">
+                Контакты
+            </div>
+            <div class="footer__contacts-row">
+                <div class="footer__contacts-col footer__contacts-col--left">
+                    <a href="tel:+74994556572" class="footer__contacts-text footer__contacts-phone">
+                        +7 (499) 455-65-72
+                    </a>
+                    <a href="mailto:info@noroots.ru" class="footer__contacts-text footer__contacts-mail">
+                        info@noroots.ru
+                    </a>
+                </div>
+                <div class="footer__contacts-col footer__contacts-col--right">
+                    <ul class="footer__contacts-socials">
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/telegram-fill-icon.webp" alt="Telegram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/whatsapp-fill-icon.webp" alt="Whatsapp">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                © 2025 Все права защищены
+            </div>
+            <div class="footer__offer">
+                <a href="#">
+                    Публичная оферта
+                </a>
+            </div>
+            <div class="footer__policies">
+                <a href="#">
+                    Политика конфиденциальности
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<div class="modal modal-policies js-modal-polices">
+    <div class="modal-policies__content modal__content">
+        <button class="modal__close js-modal-close">
+            <svg>
+                <use xlink:href='svg/dest/stack/spriteMono.svg#closeIcon'></use>
+            </svg>
+        </button>
+        <p class="modal-policies__text">
+            Продолжая использовать сервис, вы соглашаетесь с условиями <a href="#">политики конфиденциальности и
+                публичной оферты.</a>
+        </p>
+        <button class="modal-policies__btn btn" id="policiesAgreeBtn">
+            <span>
+                Продолжить
+            </span>
+        </button>
+    </div>
+</div>
+<div class="modal modal-upload">
+    <div class="modal-upload__content modal__content">
+        <button class="modal__close js-modal-close">
+            <svg>
+                <use xlink:href='svg/dest/stack/spriteMono.svg#closeIcon'></use>
+            </svg>
+        </button>
+        <div class="modal-upload__area area-upload">
+            <div class="modal-upload__area-title">Перенесите файл или нажмите на кнопку</div>
+            <input type="file" name="document" hidden id="fileInput" accept=".docx,.pdf,.png,.jpg">
+            <button type="button" class="modal-upload__area-btn btn-upload">
+                <svg>
+                    <use xlink:href="svg/dest/stack/spriteMono.svg#uploadIcon"></use>
+                </svg>
+                <span>Загрузите договор</span>
+            </button>
+            <div class="modal-upload__area-label">Поддерживаются форматы: .docx, .pdf, .png, .jpg</div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-loader">
+    <div class="modal-loader__content modal__content">
+        <div class="modal-loader__icon">
+            <img src="images/icons/loaderTimeIcon.svg" alt="">
+        </div>
+        <div class="modal-loader__label">
+            Загрузка...
+        </div>
+    </div>
+</div>
+<script src="JS/bundle.js"></script>
+</body>
+
+</html>
