@@ -27,7 +27,8 @@
             <header class="header">
                 <div class="container">
                     <a href="#" class="header__logo">
-                        <img src="images/logo.webp" data-mob="images/logo-alt.webp" href="#" alt="Noroots" />
+                        <img src="images/logo.svg" class="header__logo-img" alt="Noroots"/>
+                        <img src="images/logo-alt.svg" class="header__logo-img header__logo-img--alt" alt="Noroots"/>
                     </a>
                 </div>
             </header>
@@ -50,10 +51,10 @@
                     </div>
                 </div>
                 <div class="result__content-accordion">
-                    <div class="result__content-accordion-item">
+                    <div class="result__content-accordion-item js-close">
                         <div class="result__content-accordion-header">
                             <div class="result__content-accordion-title">
-                                Пункт договора: Краткая формулировка от ИИ (прим. из нейросети):
+                                <span>Пункт договора:</span> Краткая формулировка от ИИ (прим. из нейросети):
                             </div>
                             <div class="result__content-accordion-icon">
                                 <svg>
@@ -63,13 +64,22 @@
                         </div>
                         <div class="result__content-accordion-content">
                             <ul>
-                                <li>Причина несоответствия (прим. подгружается из LLM): </li>
-                                <li>Описание правила (прим. берется из стандарта): </li>
-                                <li>Рекомендация (прим. подгружается из стандарта): </li>
+                                <li>
+                                    <span>Причина несоответствия (прим. подгружается из LLM):</span> 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dignissimos harum optio sequi eveniet id maxime voluptatum laboriosam repellendus sit distinctio vero repellat? Corporis ratione saepe inventore iusto perferendis quos! 
+                                </li>
+                                <li>
+                                    <span>Описание правила (прим. берется из стандарта): </span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat nam! Doloribus, optio, nam maiores facere natus consectetur, officiis ad saepe impedit error asperiores adipisci. Minus aliquam cumque rerum suscipit!
+                                </li>
+                                <li>
+                                    <span>Рекомендация (прим. подгружается из стандарта):  </span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit neque iste, dolorem, ex, vel dicta sequi porro ab possimus voluptas id tenetur. Modi id natus quo voluptatibus deleniti doloribus delectus.
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="result__content-accordion-item">
+                    <div class="result__content-accordion-item js-close">
                         <div class="result__content-accordion-header">
                             <div class="result__content-accordion-title">
                                 Пункт договора: Краткая формулировка от ИИ (прим. из нейросети):
@@ -82,9 +92,18 @@
                         </div>
                         <div class="result__content-accordion-content">
                             <ul>
-                                <li>Причина несоответствия (прим. подгружается из LLM): </li>
-                                <li>Описание правила (прим. берется из стандарта): </li>
-                                <li>Рекомендация (прим. подгружается из стандарта): </li>
+                                <li>
+                                    <span>Причина несоответствия (прим. подгружается из LLM):</span> 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dignissimos harum optio sequi eveniet id maxime voluptatum laboriosam repellendus sit distinctio vero repellat? Corporis ratione saepe inventore iusto perferendis quos! 
+                                </li>
+                                <li>
+                                    <span>Описание правила (прим. берется из стандарта): </span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat nam! Doloribus, optio, nam maiores facere natus consectetur, officiis ad saepe impedit error asperiores adipisci. Minus aliquam cumque rerum suscipit!
+                                </li>
+                                <li>
+                                    <span>Рекомендация (прим. подгружается из стандарта):  </span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit neque iste, dolorem, ex, vel dicta sequi porro ab possimus voluptas id tenetur. Modi id natus quo voluptatibus deleniti doloribus delectus.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -96,6 +115,15 @@
                 </svg>
                 <span>Загрузите договор</span>
             </button>
+            <div class="result__upload-area area-upload">
+                <input type="file" name="document" hidden id="fileInput" accept=".docx,.pdf,.png,.jpg">
+                <button type="button" class="result__upload-area-btn btn-upload">
+                    <svg>
+                        <use xlink:href="svg/dest/stack/spriteMono.svg#uploadIcon"></use>
+                    </svg>
+                    <span>Загрузите договор</span>
+                </button>
+            </div>
         </div>
     </section>
     <section class="dominates">
@@ -109,7 +137,7 @@
                         <use xlink:href='svg/dest/stack/spriteMono.svg#loaderIcon'></use>
                     </svg>
                     <span class="dominates-card__text">
-                        Проверка договора <br/> <strong>за 2 минуты</strong>
+                        Проверка договора <br /> <strong>за 2 минуты</strong>
                     </span>
                 </div>
                 <div class="dominates__item dominates-card dominates-card--alt">
@@ -117,7 +145,7 @@
                         <use xlink:href='svg/dest/stack/spriteMono.svg#checkListIcon'></use>
                     </svg>
                     <span class="dominates-card__text">
-                        Рекомендации 
+                        Рекомендации
                         <strong> со ссылками на законы</strong>
                     </span>
                 </div>
@@ -210,8 +238,8 @@
             </svg>
         </button>
         <p class="modal-policies__text">
-            Продолжая использовать сервис, вы соглашаетесь с условиями <a href="#">политики конфиденциальности и
-                публичной оферты.</a>
+            Продолжая использовать сервис, вы соглашаетесь с условиями <a href="#">политики конфиденциальности</a> и
+            <a href="#">публичной оферты.</a>
         </p>
         <button class="modal-policies__btn btn" id="policiesAgreeBtn">
             <span>

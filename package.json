@@ -1,10 +1,9 @@
 {
-  "name": "project-name",
+  "name": "noroots-landing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^5.3.0",
     "console-control-strings": "^1.1.0",
     "extend": "^3.0.2",
     "mkdirp": "^1.0.4",
@@ -35,7 +34,6 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "jquery-nice-select": "^1.1.0",
     "sass": "^1.55.0",
     "style-loader": "^3.3.3",
     "webpack-stream": "^7.0.0"

@@ -153,9 +153,9 @@ footer {
         max-width: 1094px;
         width: 100%;
         background-image: url('../images/graphics/policies-modal-bg.webp');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: right -10px;
+        background-position: right bottom;
         column-gap: 15px;
     }
 
@@ -178,6 +178,7 @@ footer {
     &__btn {
         border: none;
         background-color: #0B75A1;
+        margin-top: 2px;
         padding: 1px 5px 5px;
         color: #fff;
         max-width: 202px;
@@ -246,26 +247,7 @@ footer {
     background: linear-gradient(90deg, #10182b 0%, #0b75a1 100%);
     border: none;
     cursor: pointer;
-    outline: 3px solid #fff;
     position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
-        top: -6px;
-        left: -6px;
-        background: linear-gradient(90deg, #10182b 0%, #0b75a1 100%);
-        z-index: -1;
-        border-radius: 35px;
-        transition: .3s;
-        opacity: 0;
-    }
-
-    &:hover::after {
-        transform: scale(1);
-        opacity: 1;
-    }
     svg {
         width: 25px;
         height: 25px;
@@ -289,9 +271,17 @@ footer {
         transition: .3s;
         padding: 168px 0;
         color: var(--black);
+        cursor: pointer;
         &.drag-over {
             background-color: #0c729d1a;
         }
+        &:hover {
+            background-color: #0c729d1a;
+        }
+    }
+
+    &__area-btn {
+        pointer-events: none;
     }
 
     &__area-title {

@@ -73,7 +73,7 @@
         margin-top: 134px;
         margin-bottom: 93px;
         display: flex;
-        justify-content: space-between;
+        column-gap: 120px;
         font-size: 18px;
 
         a {
@@ -93,12 +93,5 @@
     }
 
     &__policies {
-    }
-}
-.container {
-}
-.foooter {
-
-    &__contacts-row {
     }
 }

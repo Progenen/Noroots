@@ -4,16 +4,20 @@ import { modalLoader } from "./modules/modals/instanceModal.js";
 import { initFileUpload } from "./modules/upload/fileUpload.js";
 import { initBindsPoliciesAgree } from "./modules/upload/policiesHandler.js";
 
-const form = document.querySelector(".area-upload");
-const fileInput = form.querySelector("input[type='file']");
-const uploadButton = form.querySelector(".btn-upload");
+const uploadAreas = document.querySelectorAll(".area-upload");
 const policiesBtn = document.querySelector("#policiesAgreeBtn");
 
 if (document.querySelector(".result")) {
     initAccordion(".result__content-accordion", ".result__content-accordion-item");
 }
 
-initFileUpload(form, fileInput, uploadButton);
+uploadAreas.forEach(element => {
+    const fileInput = element.querySelector("input[type='file']");
+    const uploadButton = element.querySelector(".btn-upload");
+
+    initFileUpload(element, fileInput, uploadButton);
+});
+
 initBindsPoliciesAgree(policiesBtn);
 initAdaptiveImages();
 

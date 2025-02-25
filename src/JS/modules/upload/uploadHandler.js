@@ -7,15 +7,20 @@ export function handleFiles(fileInput) {
   const file = fileInput.files[0];
   if (!file) return;
 
-  if (localStorage.getItem("policiesAgree") === "true") {
-    sendFile(file); // Если согласие уже дано, сразу отправляем
-  } else {
-    pendingFile = file; // Сохраняем файл
-    modalPolicies.onOpen(); // Открываем модалку
-  }
+  pendingFile = file;
+  modalPolicies.onOpen();
+
+  fileInput.value = "";
+
+  // Скрипт с проверкой
+  // if (localStorage.getItem("policiesAgree") === "true") {
+  //   sendFile(file);
+  // } else {
+  //   pendingFile = file;
+  //   modalPolicies.onOpen();
+  // }
 }
 
-// Функция для продолжения загрузки после принятия политики
 export function processPendingFile() {
   if (pendingFile) {
     sendFile(pendingFile);
