@@ -385,10 +385,6 @@
         &__item {
             max-width: 110px;
         }
-
-        &__item:nth-child(3) {
-            margin-left: 50vw;
-        }
     }
 
     .header-h2 {
@@ -655,9 +651,6 @@
 
     // partners 576
     .partners {
-        &__item:nth-child(3) {
-            margin-left: 30vw;
-        }
     }
 
     .circles {
@@ -738,9 +731,6 @@
 @media (max-width:415px){
     // parnters 415
     .partners {
-        &__item:nth-child(3) {
-            margin-left: 10vw;
-        }
     }
 
     .circles {
